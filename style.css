@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: old;
+    src: url(./extra-old-font/ExtraOldPersonalUseRegular-9Ygz2.otf);
+}
+
+
+.head{
+    background-image: url("./brown-wall-texture\ \(1\).jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(219, 156, 156);
+}
+::-webkit-scrollbar-thumb{
+    background-color: brown;
+    border-radius: 10px;
+}
+ .tx{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+ }
+
+ .tx img{
+    margin-bottom: 70px;
+    transition: all 1s;
+ }
+ .imgs-1{
+    transform: translateY(-50%);
+    opacity: .2;
+    transition: all 1s;
+    
+ }
+ .imgs-2{
+    transform: scale(0);
+ }
+ .key{
+    background-image: url("./green-fake-grass-background\ \(1\).jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+ }
+ .key .key-text{
+    transform: translateY(-120%);
+    opacity: 0;
+    transition: all 1s;
+
+ }
+.key .key-text h1{
+    font-size: 50px;
+    font-family: old;
+}
+.key .key-text p{
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.key-image>*{
+    transform: scale(0);
+    transition: all 1s;
+}
+.pic{
+    background-image: url("./4142972.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic div img{
+    width: 100%;
+    height: 100%;
+}
+.hover{
+    position: relative!important;
+}
+.pos{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255,0.5);
+    top: 0;
+    left: 0;
+    transition: all 1s;
+}
+
+.hover > .pos.fad{
+    opacity: 0;
+}
+.hover:hover> .pos.fad{
+    opacity: 1;
+}
+.brand{
+    background-image: url("./mountain.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.option{
+    background-image: url("./brown-wooden-textured-flooring-background\ \(1\).jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title h1{
+    font-size: 50px;
+    font-family: old;
+    margin-top: 100px!important;
+}
+.title p{
+    font-size: 20px;
+}
+.size,.color{
+    transition: all 1s;
+}
+.footer{
+    background-image: url("./vv.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer img{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    transition: all 1s;
+    transform: scale(0);
+}
+.s{
+    font-weight: bold;
+    font-size: 12px!important;
+
+}
+.h-brand{
+    font-family: old;
+    font-size: 40px;
+    color:rgb(95, 26, 26);
+}
+.h3{
+    font-family: old;
+   
+    color:rgb(100, 27, 27);
+}
+.left{
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 1s;
+}
+.bottoms{
+    transform: translateY(50%);
+    opacity: 0;
+    transition: all 1s;
+}
+.right{
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 1s;
+}
+.size,.color{
+    transform: scale(0);
+}
+.text-order{
+    transform: scale(0);
+    transition: all 1s;
+}
+.text-order h1{
+    font-family: old;
+    color: rgb(82, 24, 24);
+    font-size: 40px;
+    margin-top: 100px;
+   margin-bottom: 100px;
+}
+.pic-order{
+    margin-top: 100px;
+    transform: scale(0);
+    transition: all 1s;
+   
+}
+@media only screen and (max-width: 768px) {
+    .sh{
+        display: none!important;
+        
+    }
+    .tx{
+        width: 100%;
+    }
+    .footer{
+        transform: scale(1);
+    }
+    .text-order{
+        transform: scale(1);
+    }
+    .pic-order{
+        transform: scale(1);
+    }
+  }
